@@ -19,7 +19,7 @@ describe "Dog" do
 
   describe "attributes" do
     it 'has a name and a breed' do
-      dog = Dog.new(name: "Fido", breed: "lab")
+      dog = Dog.new(name: "Fido",breed: "lab")
       expect(dog.name).to eq("Fido")
       expect(dog.breed).to eq("lab")
     end
@@ -92,7 +92,7 @@ describe "Dog" do
       expect(pat.breed).to eq(row[2])
     end
   end
-  
+
   describe '.find_by_id' do
     it 'returns a new dog object by id' do
       dog = Dog.create(name: "Kevin", breed: "shepard")
@@ -129,7 +129,7 @@ describe "Dog" do
     end
   end
 
-  
+
 
   describe '.find_by_name' do
     it 'returns an instance of dog that matches the name from the DB' do
